@@ -1,41 +1,44 @@
-/* Global styles */
-* {
-    margin: 0;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin:0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'poppins',sans-serif;
 }
 
-body {
+
+body{
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url(2.jpg) no-repeat center center;
+    background: url(2.jpg)no-repeat;
     background-size: cover;
-    font-family: 'Poppins', sans-serif;
-}
+    background-position: center;
 
-header {
+    }
+
+header{
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     padding: 20px 100px;
+    /* background: seagreen; */
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between ;
     align-items: center;
     z-index: 99;
 }
-
-.logo {
+.logo{
     font-family: 'TeX Gyre Chorus', cursive;
     font-size: 4em;
     color: #ffffff;
     user-select: none;
 }
 
-.navigation a {
+.navigation a{
     position: relative;
     font-size: 1.1em;
     color: #ffffff;
@@ -44,7 +47,7 @@ header {
     margin-left: 40px;
 }
 
-.navigation a::after {
+.navigation a::after{
     content: " ";
     position: absolute;
     left: 0;
@@ -55,113 +58,126 @@ header {
     border-radius: 5px;
     transform-origin: right;
     transform: scaleX(0);
-    transition: transform 0.5s;
+    transition: transform .5s;
 }
 
-.navigation a:hover::after {
+.navigation a:hover::after{
     transform-origin: left;
     transform: scaleX(1);
 }
 
-.navigation .btnlogin-popup {
+.navigation .btnlogin-popup{
     width: 130px;
     height: 50px;
-    background: transparent;
+    background: transparent ;
+    /* border: 2px solid #fff; */
+    outline: none;
     border-radius: 20px;
     cursor: pointer;
     font-size: 1.1em;
     color: #fff;
     font-weight: 500;
     margin-left: 40px;
-    transition: 0.5s;
+    transition: .5s;
 }
 
-.navigation .btnlogin-popup:hover {
-    background: gray;
+.navigation .btnlogin-popup:hover{
+    background: gray ;
     color: black;
 }
 
-.wrapper {
+.wrapper{
+    
     position: relative;
     width: 400px;
     height: 440px;
-    background: transparent;
+    background: transparent ;
     border-radius: 20px;
     backdrop-filter: blur(100px);
-    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 30px rgba(0,0,0,0.3);
     overflow: hidden;
     transform: scale(0);
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: transform 0.5s ease, height 0.2s ease;
+    transition: transform .5s ease, height .2s ease;
 }
 
-.wrapper.active-popup {
+
+.wrapper.active-popup{
     transform: scale(1);
+
+
 }
 
-.wrapper.active {
+.wrapper.active{
     height: 520px;
 }
 
 .wrapper .form-box {
     width: 100%;
-    padding: 40px;
+    padding:40px;
 }
 
-.wrapper .form-box.login {
-    transition: 0.18s ease;
+.wrapper .form-box.login{
+    transition: .18s ease;
     transform: translateX(0);
 }
 
-.wrapper.active .form-box.login {
+.wrapper.active .form-box.login{
     transition: none;
     transform: translateX(-400px);
+    
 }
 
-.wrapper .form-box.register {
-    position: absolute;
-    transition: none;
-    transform: translateX(400px);
+
+.wrapper .form-box.register{
+   position: absolute;
+   transition: none;
+   transform: translateX(400px);
 }
 
-.wrapper.active .form-box.register {
-    transition: 0.18s ease;
+.wrapper.active .form-box.register{
+    transition: .18s ease;
     transform: translateX(0);
+    
 }
 
-.wrapper .icon-close {
-    position: absolute;
+
+.wrapper .icon-close{
+    position: absolute ;
     top: 0;
     right: 0;
     width: 45px;
     height: 45px;
-    background: #ffffff;
+    background:  #ffffff;
     font-size: 2em;
     color: black;
     display: flex;
     justify-content: center;
     align-items: center;
     border-bottom-left-radius: 20px;
-    cursor: pointer;
+    cursor: pointer ;
     z-index: 1;
 }
 
-.wrapper .icon-close:hover {
-    background: rgba(83, 73, 73, 0.5);
+.wrapper .icon-close:hover{
+    background: rgba(83,73,73,0.5);
     color: #fff;
     border-color: #fff;
 }
 
-/* Form styles */
-.form-box h2 {
+
+
+
+
+.form-box h2{
     font-size: 2em;
     color: black;
     text-align: center;
 }
 
-.input-box {
+.input-box{
     position: relative;
     width: 100%;
     height: 50px;
@@ -169,7 +185,7 @@ header {
     margin: 30px 0;
 }
 
-.input-box label {
+.input-box label{
     position: absolute;
     top: 50%;
     left: 5px;
@@ -177,19 +193,19 @@ header {
     font-size: 1.1em;
     color: black;
     font-weight: 500;
-    pointer-events: none;
-    transition: 0.5s;
+    pointer-events: none ;
+    transition: .5s;
 }
 
-.input-box input:focus ~ label,
-.input-box input:valid ~ label {
-    top: -5px;
+.input-box input:focus~label,
+.input-box input:valid~label{
+    top:-5px;
 }
 
 .input-box input {
     width: 100%;
     height: 100%;
-    background: transparent;
+    background: transparent ;
     border: none;
     outline: none;
     font-size: 1em;
@@ -197,18 +213,19 @@ header {
     padding: 0 35px 0 5px;
 }
 
-.input-box .icon {
-    position: absolute;
+.input-box .icon{
+    position: absolute ;
     right: 8px;
     top: 50%;
     transform: translateY(-50%);
     font-size: 20px;
     color: black;
     line-height: 57px;
+
 }
 
-.remember-forgot {
-    font-size: 0.9em;
+.remember-forgot{
+    font-size: .9em;
     color: black;
     font-weight: 500;
     margin: -15px 0 15px;
@@ -216,131 +233,199 @@ header {
     justify-content: space-between;
 }
 
-.remember-forgot label input {
+.remember-forgot label input{
     accent-color: black;
     margin-right: 3px;
 }
 
-.remember-forgot a {
+.remember-forgot a{
     color: black;
     text-decoration: none;
 }
 
-.remember-forgot a:hover {
+.remember-forgot a:hover{
     text-decoration: underline;
 }
 
-.btn {
+.btn{
     width: 100%;
     height: 45px;
     background: #fff;
     border: none;
     outline: none;
     border-radius: 40px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
     cursor: pointer;
     font-size: 16px;
     color: #333;
     font-weight: 600;
+
 }
 
-.btn:hover {
-    background: rgba(83, 73, 73, 0.5);
+.btn:hover{
+    background: rgba(83,73,73,0.5);
     color: #fff;
     border-color: #fff;
 }
 
-.login-register {
+.login-register{
     font-size: 14.5px;
     text-align: center;
-    color: black;
+    color:black;
     font-weight: 600;
     margin: 20px 0 15px;
+    
 }
 
-.login-register p a {
+.login-register p a{
     color: black;
     text-decoration: none;
     font-weight: 600;
 }
 
-.login-register p a:hover {
+.login-register p a:hover{
     text-decoration: underline;
 }
 
+
+
+
+
+
 /* Responsive design */
-@media only screen and (max-width: 780px) {
-    header {
+
+@media only screen and (max-width: 780px){
+    header{
         padding: 20px 50px;
+}
+
+  }
+    .logo{
+        font-size: 1.5em;
     }
-    .logo {
-        font-size: 2em;
-    }
-    .navigation a {
-        font-size: 1em;
-        margin-left: 20px;
-    }
-    .navigation .btnlogin-popup {
+    .navigation a{
+            font-size: 1em;
+            margin-left: 20px;
+        }
+    .navigation .btnlogin-popup{
         width: 100px;
         height: 40px;
         font-size: 1em;
         margin-left: 20px;
     }
-    .wrapper {
+
+    .wrapper{
         width: 350px;
         height: 400px;
     }
-    .form-box {
+    .form-box{
         padding: 30px;
     }
-    .wrapper.active .form-box.login {
+    .wrapper.active .form-box.login{
         transform: translateX(-350px);
     }
-}
 
-@media only screen and (max-width: 480px) {
-    header {
+
+
+
+
+@media only screen and (max-width: 480px){
+    header{
         padding: 20px 20px;
         flex-direction: column;
         align-items: flex-start;
-    }
-    .logo {
-        font-size: 1.5em;
+}
+    .logo{
+        font-size: 1.2em;
         margin-bottom: 10px;
     }
     .navigation {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-    }
-    .navigation a {
-        font-size: 0.9em;
-        margin: 10px 0;
-    }
-    .navigation .btnlogin-popup {
-        width: 100px;
-        height: 40px;
-        font-size: 1em;
-        margin: 10px 0;
-    }
-    .wrapper {
-        width: 300px;
-        height: 380px;
-    }
-    .form-box {
-        padding: 20px;
-    }
-    .form-box h2 {
-        font-size: 1.5em;
-    }
-    .input-box label {
-        font-size: 1em;
-    }
-    .btn {
-        height: 40px;
-        font-size: 14px;
-    }
-    .wrapper.active .form-box.login {
-        transform: translateX(-300px);
-    }
+                
+            }
+
+    .navigation a{
+            font-size: 0.9em;
+            margin: 10px 0 ;
+        }
+    .navigation .btnlogin-popup{
+            width: 100px;
+            height: 40px;
+            font-size: 1em;
+            margin: 10px 0;
+        }
+        .wrapper{
+            width: 300px;
+            height: 380px;
+
+        }
+        .form-box{
+            padding: 20px;
+        }
+        .form-box h2{
+            font-size: 1.5em;
+        }
+        .input-box label{
+            font-size: 1em;
+
+        }
+        .btn{
+            height: 40px;
+            font-size: 14px;
+        }
+        .wrapper.active .form-box.login{
+            transform: translateX(-300px);
+        }
+}
+
+
+
+
+
+
+
+
+
+.texture-section {
+    color: rgb(0, 0, 0);
+    margin-top: 40px;
+    text-align: justify;
+    padding: 10px;
+    width: 990px;
+    max-width: 90%;
+    border: 2px solid rgba(28, 26, 26, 0.7);
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    position: absolute;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.texture-section h2 {
+    font-family: 'TeX Gyre Chorus', cursive;
+    color: rgb(221, 6, 6);
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.texture-section p {
+    font-family: 'TeX Gyre Chorus', monospace;
+    font-size: 33px;
+    line-height: 1.6;
+    color: #fff;
+    padding: 10px;
+    font-weight: bold; /* Make the text bold */
+
+}
+
+.texture-section h3 {
+    font-family: 'TeX Gyre Chorus', cursive;
+    color: rgb(93, 76, 72);
+    text-align: right;
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin-right: 20px;
 }
