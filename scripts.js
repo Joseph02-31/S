@@ -48,7 +48,7 @@ document.querySelector('.form-box.login form').addEventListener('submit', (e) =>
         sessionStorage.setItem('loggedIn', 'true');
 
         // Redirect to YouTube if credentials are valid
-        window.location.href = "file:///C:/Users/Lenovo/OneDrive/Desktop/FIRST/Logout/index.html";
+        window.location.href = "Logout//index.html";
     } else {
         // Show an alert if credentials are invalid
         alert("Invalid email or password. Please try again!");
