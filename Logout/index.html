@@ -8,7 +8,7 @@
         // Check if the user is logged in
         if (sessionStorage.getItem('loggedIn') !== 'true') {
             // If not, redirect to the login page
-            window.location.href = "//index.html"; // Login page URL
+            window.location.href = "/index.html"; // Login page URL
         }
     </script>
     <link rel="stylesheet" href="style.css">
@@ -22,7 +22,7 @@
     <header>
         <h2 class="logo">B. Youssef</h2>
         <nav class="navigation">
-            <button class="btnlogin-popup" onclick="window.location.href='//index.html';">Logout</button>
+            <button class="btnlogin-popup" onclick="window.location.href='/index.html';">Logout</button>
         </nav>
     </header>
 </body>
