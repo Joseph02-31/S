@@ -46,6 +46,26 @@
                 <div class="title">Read PDFs</div>
             </a>
         </div>
+
+
+            <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                const email = sessionStorage.getItem('email'); // Get the email from session storage
+                const textDiv = document.querySelector('.text-section'); // Select the text-section div
+    
+                // Check the email and display the corresponding message
+                if (email === "Youssef@pi.m") {
+                    textDiv.textContent = "Welcome M. Youssef BOUZIANI !"; // Message for ab@pi.m
+                } else if (email === "Youssra@pi.m") {
+                    textDiv.textContent = "Welcome Mme. Youssra BENHADOU !"; // Message for cd@pi.m
+                } else if (email === "Aya@pi.m") {
+                    textDiv.textContent = "Welcome Mme. Aya Harrat !"; // Message for cd@pi.m    
+                    
+                } else {
+                    textDiv.textContent = "Hello!"; // Default message
+                }
+            });
+        </script> 
     
         
     
