@@ -40,3 +40,20 @@
             color: #333;
             text-transform: capitalize;
         }
+
+        .text-section {
+            margin-top: 20px; /* Space below the logo and logout button */
+            padding: 10px;
+            width: 90%; /* Adapt to smaller screens */
+            max-width: 600px; /* Limit maximum width */
+            border: 2px solid rgba(28, 26, 26, 0.7);
+            background-color: rgba(0, 0, 0, 0.3);
+            color: white;
+            text-align: center;
+            font-family: 'TeX Gyre Chorus', cursive;
+            font-size: 40px;
+            border-radius: 8px;
+            margin-left: auto;
+            margin-right: auto; /* Center the section */
+        }
+
