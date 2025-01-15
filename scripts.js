@@ -46,6 +46,7 @@ document.querySelector('.form-box.login form').addEventListener('submit', (e) =>
     // Check if the credentials match
     if (validEmails.includes(email) && password === validPassword) {
         sessionStorage.setItem('loggedIn', 'true');
+        sessionStorage.setItem('email', email); // Save the email for personalization
 
         // Redirect to YouTube if credentials are valid
         window.location.href = "Logout/index.html";
