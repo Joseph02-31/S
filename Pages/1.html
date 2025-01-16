@@ -102,10 +102,53 @@
             margin-bottom: 10px;
             margin-right: 20px;
         }
+            header {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 10px;
+     }
+
+    .icon-link {
+      margin-right: 20px;
+      text-decoration: none;
+    }
+
+    .logo {
+      font-family: 'TeX Gyre Chorus', cursive;
+      font-size: 1.5em;
+      color: #ffffff;
+      user-select: none;
+    }
+
+    .icon {
+      width: 40px;
+      height: 40px;
+      vertical-align: middle;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .icon:hover {
+      transform: scale(1.2);
+    }
         
     </style>
 </head>
 <body>
+  <header>
+    <a href="javascript:void(0);" class="icon-link" onclick="goBack()">
+      <img src="arrow.png" alt="Arrow Icon" class="icon">
+    </a>
+    <h2 class="logo">B. Youssef</h2>
+  </header> 
+
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+  </script>
+    
     <div class="video-container">
         <!-- YouTube Video Player -->
         <iframe 
