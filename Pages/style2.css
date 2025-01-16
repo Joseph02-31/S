@@ -1,0 +1,18 @@
+
+  
+.icon-link {
+    margin-right: 20px; /* Spacing between the icon and the logo */
+    text-decoration: none; /* Remove underline if it's a link */
+}
+
+.icon {
+    width: 40px; /* Set desired size */
+    height: 40px;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Smooth animation */
+}
+
+.icon:hover {
+    transform: scale(1.2); /* Enlarge on hover */
+}
+
