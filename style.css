@@ -431,7 +431,11 @@ header{
     color: #fff;
     padding: 10px;
     text-align: center;
+    transition: color 0.3s ease; 
 
+}
+.texture-section:hover p {
+    color: black; /* Change text color to black when hover is applied */
 }
 
 .texture-section h3 {
