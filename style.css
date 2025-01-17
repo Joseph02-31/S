@@ -408,7 +408,13 @@ header{
     position: absolute;
     margin-bottom: 10px;
     margin-left: 10px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
 }
+.texture-section:hover {
+      background-color: #f9f9f9;
+    }
+
 
 .texture-section h2 {
     font-family: 'TeX Gyre Chorus', cursive;
@@ -429,10 +435,10 @@ header{
 }
 
 .texture-section h3 {
-    font-family: 'TeX Gyre Chorus', cursive;
+    font-family: 'Courier New', monospace;
     color: rgb(93, 76, 72);
     text-align: right;
-    font-size: 25px;
+    font-size: 20px;
     margin-bottom: 10px;
     margin-right: 20px;
 }
