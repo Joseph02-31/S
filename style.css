@@ -412,7 +412,7 @@ header{
     cursor: pointer;
 }
 .texture-section:hover {
-      background-color: #f9f9f9;
+      background-color: rgba(249, 249, 249, 0.5);
     }
 
 
