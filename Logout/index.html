@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>~B.Youssef~</title>
+    <title>~ B. Youssef ~</title>
     <script>
         // Check if the user is logged in
         if (sessionStorage.getItem('loggedIn') !== 'true') {
@@ -45,6 +45,14 @@
                 <i class="fas fa-file-alt icon"></i>
                 <div class="title">Read PDFs</div>
             </a>
+            <!-- Message Card -->
+            <a href="https://drive.google.com/drive/folders/1zhAbil4UMTDqC-AaH_5Yltt38_2Dezy2" class="card" id="m-card">
+                <i class="fas fa-envelope icon"></i>
+                <div class="title">
+                    Message<br>for you !
+                </div>
+                
+            </a>
         </div>
 
 
@@ -52,12 +60,14 @@
             document.addEventListener("DOMContentLoaded", () => {
                 const email = sessionStorage.getItem('email'); // Get the email from session storage
                 const textDiv = document.querySelector('.text-section'); // Select the text-section div
+                const mCard = document.getElementById('m-card'); // Select the M card element
     
                 // Check the email and display the corresponding message
     if (email === "Youssef@pi.m") {
         textDiv.textContent = "Welcome Mr. Youssef BOUZIANI !"; // Message for ab@pi.m
     } else if (email === "Youssra@pi.m") {
-        textDiv.textContent = "Welcome Ms. Youssra BENHADOU !"; 
+        textDiv.textContent = "Welcome Ms. Youssra BENHADOU !";
+        mCard.style.display = "none";
     } else if (email === "Aya@pi.m") {
         textDiv.textContent = "Welcome Ms. Aya HARRAT !";   
     } else if (email === "Bouchlaghem@pi.m") {
@@ -79,6 +89,7 @@
         textDiv.textContent = "Welcome Ms. Loubna EL HOUARI !";
     } else if (email === "Mermri@pi.m") {
         textDiv.textContent = "Welcome Mr. Mermri EL BEKKAYE !";
+        mCard.style.display = "none";
     } else if (email === "Jaara@pi.m") {
         textDiv.textContent = "Welcome Mr. El Miloud JAARA !";            
     } else {
