@@ -34,7 +34,7 @@
     } else {
         textDiv.textContent = "Hello!"; // Default message
     }
-            });
+            
     
 
 
