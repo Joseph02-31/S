@@ -11,11 +11,11 @@
         textDiv.textContent = "Welcome Ms. Aya HARRAT !";   
     } else if (email === "Bouchlaghem@pi.m") {
         textDiv.textContent = "Welcome Mr. Mohammed BOUCHLAGHEM !"; 
+    } else if (email === "Oudghiri@pi.m") {
+        textDiv.textContent = "Welcome Mr. Morad OUDGHIRI !"; 
         
     } else if (email === "Lamnii@pi.m") {
         textDiv.textContent = "Welcome Mr. Mohamed LAMNII !"; 
-    } else if (email === "Oudghiri@pi.m") {
-        textDiv.textContent = "Welcome Mr. Morad OUDGHIRI !"; 
     } else if (email === "Anass@pi.m") {
         textDiv.textContent = "Welcome Mr. Anass OURRAOUI !"; 
     } else if (email === "Serji@pi.m") {
