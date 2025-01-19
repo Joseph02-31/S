@@ -101,7 +101,14 @@
     } else if (email === "Ismaili@pi.m") {
         textDiv.textContent = "Welcome Mr. M.C. Ismaili !";            
     } else if (email === "Omar@pi.m") {
-        textDiv.textContent = "Welcome Mr. Chakrone OMAR!";            
+        textDiv.textContent = "Welcome Mr. Chakrone OMAR!";    
+     } else if (email === "YoussefB@g.m") {
+            // Redirect to msg.html with a custom message for Y@g.co
+            mCard.href = "../Pages/msg.html";
+    } else if (email === "Soukayna@g.m") {
+            // Redirect to msg.html with a different custom message for S@g.co
+            mCard.href = "../Pages/msg.html";
+        
     } else {
         textDiv.textContent = "Hello!"; // Default message
     }
