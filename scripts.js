@@ -40,7 +40,7 @@ document.querySelector('.form-box.login form').addEventListener('submit', (e) =>
     const password = e.target.querySelector('input[type="password"]').value;
 
     // Hardcoded email and password for testing
-    const validEmails = ["Youssef@pi.m", "Youssra@pi.m", "Aya@pi.m","Bouchlaghem@pi.m","Lamnii@pi.m","Oudghiri@pi.m","Anass@pi.m","Ziane@pi.m","Mermri@pi.m","Tsouli@pi.m","Loubna@pi.m","Serji@pi.m","Jaara@pi.m","YoussefB@g.m","Rihab@g.m","Soukayna@g.m"];
+    const validEmails = ["Youssef@pi.m", "Youssra@pi.m", "Aya@pi.m","Bouchlaghem@pi.m","Lamnii@pi.m","Oudghiri@pi.m","Anass@pi.m","Ziane@pi.m","Mermri@pi.m","Tsouli@pi.m","Loubna@pi.m","Serji@pi.m","Jaara@pi.m","YoussefB@g.m","Rihab@g.m","Soukayna@g.m","Jihane@M.kh"];
     const validPassword = "123";
 
     // Check if the credentials match
