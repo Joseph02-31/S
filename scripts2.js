@@ -1,8 +1,10 @@
-    function toggleDropdown() {
+function toggleDropdown() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
 
 function changeLanguage(lang) {
+    // Save the selected language in localStorage
+    localStorage.setItem("selectedLanguage", lang);
     // Handle texture visibility
     const textureEnglish = document.getElementById("texture-english");
     const textureArabic = document.getElementById("texture-arabic");
