@@ -49,12 +49,12 @@ document.querySelector('.form-box.login form').addEventListener('submit', (e) =>
             "Jaara@pi.m", "Omar@pi.m", "Ismaili@pi.m"
         ],
 
-        "Nisrine0001" : ["Nisrine@g.m"]
+        "Nisrine0001" : ["Nisrine@g.m"],
         "123" : [
           "Youssef@pi.m", "Youssra@pi.m", "Aya@pi.m",
           "YoussefB@g.m", "Rihab@g.m", "Soukayna@g.m",
           "Jihane@M.kh"
-        ],
+        ]
         
 
     };
