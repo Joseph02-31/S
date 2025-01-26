@@ -54,6 +54,7 @@
     font-weight: 700; /* Make it bold */
 }
 
+
 /* Arabic-specific styles for buttons and links */
 [lang="ar"] .navigation a,
 [lang="ar"] .btnlogin-popup {
@@ -65,4 +66,9 @@
 /* Japanese-specific styles */
 [lang="jp"] {
     font-family: "Sawarabi Mincho", serif;
+}
+[lang="jp"] .logo {
+    font-family: "Sawarabi Mincho", serif;
+    font-size: 2rem; /* Adjust size */
+    font-weight: 700; /* Make it bold */
 }
