@@ -47,6 +47,9 @@ function applySavedLanguage() {
     // Get the saved language from localStorage
     const savedLanguage = localStorage.getItem("selectedLanguage") || "en"; // Default to English
 
+        // Apply `lang` attribute to the HTML tag for styling
+    document.documentElement.setAttribute("lang", savedLanguage);
+
     // Elements to translate
     const elements = {
         watchVideos: document.querySelector(".container .card:nth-child(1) .title"),
