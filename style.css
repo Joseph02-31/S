@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&display=swap');
 @font-face {
     font-family: 'TeX Gyre Chorus';
     font-style: italic;
     font-weight: 500;
     src: local('TeX Gyre Chorus'), url('https://fonts.cdnfonts.com/s/52832/texgyrechorus-mediumitalic.woff') format('woff');
   }
+
+
 *{
     margin:0;
     padding: 0;
@@ -39,10 +44,26 @@ header{
     z-index: 99;
 }
 .logo{
-    font-family: 'TeX Gyre Chorus', cursive;
+    font-family: "TeX Gyre Chorus", cursive;
     font-size: 4em;
     color: #ffffff;
     user-select: none;
+}
+
+.eng {
+    font-family: "TeX Gyre Chorus", cursive;
+}
+.ara {
+    font-family: "Noto Nastaliq Urdu", serif;
+    font-weight: 700;
+}
+.ara1 {
+    font-family: "Noto Kufi Arabic", serif;
+
+}
+
+.jpns {
+    font-family: "Sawarabi Mincho", serif;
 }
 
 .navigation a{
@@ -53,6 +74,9 @@ header{
     font-weight: 500;
     margin-left: 40px;
 }
+
+
+
 
 .navigation a::after{
     content: " ";
@@ -304,8 +328,8 @@ header{
 @media only screen and (max-width: 780px){
     header{
         padding: 20px 50px;
-}
 
+    }
   }
     .logo{
         font-size: 1.5em;
@@ -335,6 +359,95 @@ header{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+.texture-section {
+    color: rgb(0, 0, 0);
+    margin-top: 40px;
+    text-align: justify;
+    padding: 10px;
+    width: 990px;
+    max-width: 90%;
+    border: 2px solid rgba(28, 26, 26, 0.7);
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    position: absolute;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+.texture-section:hover {
+      background-color: rgba(249, 249, 249, 0.5);
+    }
+
+
+.texture-section h2 {
+    font-family: 'TeX Gyre Chorus', cursive;
+    color: rgb(221, 6, 6);
+    text-align: center;
+    font-size: 44px;
+    margin-bottom: 10px;
+}
+
+
+.texture-section p {
+    font-family: "TeX Gyre Chorus", cursive;
+    font-size: 40px;
+    line-height: 1.6;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    transition: color 0.3s ease; 
+
+}
+.texture-section:hover p {
+    color: black; /* Change text color to black when hover is applied */
+}
+
+.texture-section h3 {
+    font-family: 'Courier New', monospace;
+    color: rgb(93, 76, 72);
+    text-align: right;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+
+
+#texture-arabic h2 {
+    font-family: 'Decotype Thuluth II', cursive;
+
+}
+#texture-arabic p {
+    font-family: 'Decotype Thuluth II', cursive;
+
+}
+
+#texture-japanese h2 {
+    font-family: 'Sawarabi Mincho', serif;
+    font-size: 40px;
+
+}
+#texture-japanese p {
+    font-family: 'Sawarabi Mincho', serif;
+    font-size: 35px;
+
+}
+
+#texture-japanese h3 {
+    font-family: 'Sawarabi Mincho', serif;
+   
+}
 
 @media only screen and (max-width: 480px){
     header{
@@ -385,64 +498,29 @@ header{
         .wrapper.active .form-box.login{
             transform: translateX(-300px);
         }
-}
+
+        .texture-section h2 {
+
+            font-size: 35px;
+            margin-bottom: 10px;
+        }
+        
+        
+        .texture-section p {
+
+            font-size: 29px;
+            line-height: 1.6;
+
+
+        }
+ 
+        
+        .texture-section h3 {
+            font-size: 10px;
+            margin-bottom: 10px;
+            margin-right: 20px;
+        }
 
 
 
-
-
-
-
-
-
-.texture-section {
-    color: rgb(0, 0, 0);
-    margin-top: 40px;
-    text-align: justify;
-    padding: 10px;
-    width: 990px;
-    max-width: 90%;
-    border: 2px solid rgba(28, 26, 26, 0.7);
-    background-color: rgba(0, 0, 0, 0.3);
-    border-radius: 8px;
-    position: absolute;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    transition: background-color 0.3s ease;
-    cursor: pointer;
-}
-.texture-section:hover {
-      background-color: rgba(249, 249, 249, 0.5);
-    }
-
-
-.texture-section h2 {
-    font-family: 'TeX Gyre Chorus', cursive;
-    color: rgb(221, 6, 6);
-    text-align: center;
-    font-size: 44px;
-    margin-bottom: 10px;
-}
-
-.texture-section p {
-    font-family: "TeX Gyre Chorus", cursive;
-    font-size: 40px;
-    line-height: 1.6;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-    transition: color 0.3s ease; 
-
-}
-.texture-section:hover p {
-    color: black; /* Change text color to black when hover is applied */
-}
-
-.texture-section h3 {
-    font-family: 'Courier New', monospace;
-    color: rgb(93, 76, 72);
-    text-align: right;
-    font-size: 20px;
-    margin-bottom: 10px;
-    margin-right: 20px;
 }
