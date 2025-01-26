@@ -46,9 +46,22 @@
 /* Arabic-specific styles */
 [lang="ar"] {
     font-family: "Noto Nastaliq Urdu", serif;
-    font-weight: 700;
+}
+/* Arabic-specific logo font */
+[lang="ar"] .logo {
+    font-family: "Noto Nastaliq Urdu", serif;
+    font-size: 2rem; /* Adjust size */
+    font-weight: 700; /* Make it bold */
 }
 
+/* Arabic-specific styles for buttons and links */
+[lang="ar"] .navigation a,
+[lang="ar"] .btnlogin-popup {
+    font-family: "Noto Kufi Arabic", serif;
+    font-size: 1rem; /* Adjust size */
+    padding: 0.5em 1em; /* Add spacing */
+    letter-spacing: 0.03em; /* Add slight spacing for readability */
+}
 /* Japanese-specific styles */
 [lang="jp"] {
     font-family: "Sawarabi Mincho", serif;
