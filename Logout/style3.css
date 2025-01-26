@@ -63,6 +63,8 @@
     padding: 0.5em 1em; /* Add spacing */
     letter-spacing: 0.03em; /* Add slight spacing for readability */
 }
+[lang="ar"] .text-section {
+    font-family: "TeX Gyre Chorus", cursive;}
 /* Japanese-specific styles */
 [lang="jp"] {
     font-family: "Sawarabi Mincho", serif;
