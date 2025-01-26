@@ -14,7 +14,7 @@ const translations = {
         messageForYou: "Message<br>pour toi !",
         logo: "B. Youssef",
         language: "Langue",
-        logout: "Déconnexion"
+        logout: "Quitter"
     },
     ar: {
         watchVideos: "مشاهدة الفيديوهات",
