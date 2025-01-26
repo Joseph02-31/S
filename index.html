@@ -5,25 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>~ B. Youssef ~</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
     <link rel="icon" href="1.png" type="image/x-icon">
 
-    <script src="small-screen-alert.js" defer></script> <!-- Include the new JS file -->
+
 
     
 
 </head>
 <body>
     <header>
-        <h2 class="logo">B. Youssef</h2>
+        <h2 class="logo" id="logoe" >B. Youssef</h2>
         <nav class="navigation">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Contact</a>
-            <button class="btnlogin-popup">Login</button>
+            <a href="#" id="home-link" >Home</a>
+            <div class="dropdown">
+                <a onclick="toggleDropdown()" class="dropbtn" id="language-link">Language</a>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#" onclick="changeLanguage('en')">English</a>
+                    <a href="#" onclick="changeLanguage('fr')">Français</a>
+                    <a href="#" onclick="changeLanguage('ar')">العربية</a>
+                    <a href="#" onclick="changeLanguage('am')">ⴰⵎⴰⵣⵉⵖⵉⴰ</a>
+                    <a href="#" onclick="changeLanguage('jp')">日本語</a>
+                </div>
+                
+            </div>
 
+            <button class="btnlogin-popup" id="login-link" >Login</button>
         </nav>
     </header>
+    
+    
 
     <div class="wrapper">
         <span class="icon-close">
@@ -101,8 +112,16 @@
         </div> 
 
     </div>
+    
+    
+
+
+
+
    
     <div class="texture-section">
+            <!-- English Content -->
+    <div id="texture-english">
         <h2>Ladies and gentlemen</h2>
 
         <p>Welcome to my mathematical world</p>
@@ -110,11 +129,57 @@
         <p>Step into the realm of numbers, where every equation tells a story and every solution unlocks a new dimension.</p>
         <h3>© 2025 Joseph | All Rights Reserved</h3>
     </div>
+
+        <!-- Arabic Content -->
+        <div id="texture-arabic" class="hidden">
+        <h2>سيداتي وسادتي</h2>
+
+        <p>مرحبًا بكم في عالمي الرياضياتي</p>
+        <p>يرجى تسجيل الدخول للولوج إلى المنصة.</p>
+        <p>ادخل إلى عالم الأرقام، حيث تحكي كل معادلة قصة، و يفتح كل حل بعدا جديدًا.</p>
+        <h3>© 2025 يوسف | جميع الحقوق محفوظة</h3>
+    </div>
+
+        <!-- French Content -->
+        <div id="texture-french" class="hidden">
+            <h2>Mesdames et Messieurs</h2>
+    
+            <p>Bienvenue dans mon monde mathématique</p>
+            <p>Veuillez vous connecter pour accéder à la plateforme.</p>
+            <p>Entrez dans le royaume des nombres, où chaque équation raconte une histoire et chaque solution ouvre une nouvelle dimension.</p>
+            <h3>© 2025 Youssef | Tous droits réservés</h3>
+        </div>
+
+            <!-- Amazigh Content -->
+    <div id="texture-amazigh" class="hidden">
+        <h2>ⵉⵖⵔⵉ ⵙ ⵉⴼⵔⵉⵏ</h2>
+
+        <p>ⴰⵏⴰⵢ ⵉⵍⵍⵉ ⴷ ⵉⵇⵇⵉⵍⵉⵏ ⴷ ⵜⵓⵙⵙⵉⴽⴰⵜⵉⵏ ⵏⵏⵓⴹⵉⵎ</p>
+        <p>ⵉⴼⵓⵙⵙⵏ ⵢⴰⵎⵉⴷⵏ ⴷ ⵙⵉⵏⵏⵓⴼⵓ ⵢⴰⵍⵍⵉⵏ ⴷⵜⵔⵓⴹⵉⵎ.</p>
+        <p>ⵙⵔⴰⵏ ⵏⵓⵎⵎⵓⵔⵉⵏ ⴳ ⵉⵇⵇⵉⵍⵉⵏ ⴰⵏⵙⵓⴽⴽⵉⵏ ⴷ ⵜⵉⵙⵙⵓⵍⵉⵏ ⵓⵎⵎⵙⵙⴹⵉⵏ.</p>
+        <h3>© 2025 ⵢⵓⵙⴼ | ⵓⵔ ⴰⵎⵎⵢⵙ ⵏⵖⵓ ⵖⵓⵔⵔⵉⴳ</h3>
+    </div>
+             <!-- Japanese Content -->
+
+    <div id="texture-japanese" class="hidden">
+        <h2>皆さん、ようこそ</h2>
+    
+        <p>私の数学の世界へようこそ</p>
+        <p>プラットフォームにアクセスするにはログインしてください。</p>
+        <p>数式の世界に足を踏み入れましょう。ここでは、すべての方程式が物語を語り、すべての解が新しい次元を開きます。</p>
+        <h3>© 2025 ユセフ  | 全著作権所有</h3>
+    </div>
+    
+
+    </div>
+
+
+
         
     <script src="scripts.js"></script>
+    <script src="scripts2.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 </body>
 </html>
