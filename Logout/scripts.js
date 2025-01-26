@@ -1,3 +1,81 @@
+                document.addEventListener("DOMContentLoaded", () => {
+                const email = sessionStorage.getItem('email'); // Get the email from session storage
+                const textDiv = document.querySelector('.text-section'); // Select the text-section div
+                const mCard = document.getElementById('m-card'); // Select the M card element
+
+
+                    
+ 
+
+
+                // Check the email and display the corresponding message
+    if (email === "Youssef@pi.m") {
+        textDiv.textContent = "Welcome Mr. Youssef BOUZIANI !"; // Message for ab@pi.m
+    } else if (email === "Youssra@pi.m") {
+        textDiv.textContent = "Welcome Ms. Youssra BENHADOU !";
+        mCard.style.display = "none";
+    } else if (email === "Aya@pi.m") {
+        textDiv.textContent = "Welcome Ms. Aya HARRAT !";   
+    } else if (email === "Bouchlaghem@pi.m") {
+        textDiv.textContent = "Welcome Mr. Mohammed BOUCHLAGHEM !"; 
+    } else if (email === "Oudghiri@pi.m") {
+        textDiv.textContent = "Welcome Mr. Morad OUDGHIRI !"; 
+        
+    } else if (email === "Lamnii@pi.m") {
+        textDiv.textContent = "Welcome Mr. Mohamed LAMNII !"; 
+    } else if (email === "Anass@pi.m") {
+        textDiv.textContent = "Welcome Mr. Anass OURRAOUI !"; 
+                      mCard.style.display = "none";
+       // mCard.href = "../Pages/msg.html";
+    } else if (email === "Serji@pi.m") {
+        textDiv.textContent = "Welcome Mr. Abdelilah SERJI !";
+                //   mCard.style.display = "none";
+          mCard.href = "../Pages/msg.html";
+
+    } else if (email === "Tsouli@pi.m") {
+        textDiv.textContent = "Welcome Mr. Najib TSOULI !";
+        mCard.href = "../Pages/msg.html";
+    } else if (email === "Ziane@pi.m") {
+        textDiv.textContent = "Welcome Mr. M'hammed ZIANE !";
+    } else if (email === "Loubna@pi.m") {
+        textDiv.textContent = "Welcome Ms. Loubna EL HOUARI !";
+        mCard.href = "../Pages/msg.html";
+    } else if (email === "Mermri@pi.m") {
+        textDiv.textContent = "Welcome Mr. Mermri EL BEKKAYE !";
+        mCard.style.display = "none";
+    } else if (email === "Jaara@pi.m") {
+        textDiv.textContent = "Welcome Mr. El Miloud JAARA !";            
+    } else if (email === "Ismaili@pi.m") {
+        textDiv.textContent = "Welcome Mr. M.C. Ismaili !";            
+    } else if (email === "Omar@pi.m") {
+        textDiv.textContent = "Welcome Mr. Chakrone OMAR !";    
+        mCard.href = "../Pages/msg.html";
+     } else if (email === "YoussefB@g.m") {
+        textDiv.textContent = "Welcome Mr. Youssef BOUYAHROUZI !";  
+            mCard.href = "../Pages/msg.html";
+    } else if (email === "Rihab@g.m") {
+        textDiv.textContent = "Welcome Ms. Rihab BOUZIANI !";           
+            mCard.href = "../Pages/msg.html";
+        
+    } else if (email === "Soukayna@g.m") {    
+          textDiv.textContent = "Welcome Ms. Soukayna RAHMANI !"; 
+          mCard.style.display = "none";
+     } else if (email === "Jihane@M.kh") {    
+          textDiv.textContent = "Welcome Ms. Maryama KHATABI !"; 
+          mCard.style.display = "none";
+       // mCard.href = "../Pages/msg.html";
+
+        
+        
+        
+        
+    } else {
+        textDiv.textContent = "Hello!"; // Default message
+    }
+
+
+                                 });   
+
 // Translation data
 const translations = {
     en: {
