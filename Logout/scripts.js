@@ -6,7 +6,7 @@ const translations = {
         messageForYou: "Message<br>for you!"
     },
     fr: {
-        watchVideos: "Regarder <br> des vidéos",
+        watchVideos: "Regarder<br>des vidéos",
         readPDFs: "Lire des PDFs",
         messageForYou: "Message<br>pour toi !"
     },
