@@ -43,14 +43,18 @@ document.querySelector('.form-box.login form').addEventListener('submit', (e) =>
     const validUsers = {
 
         "123" : [
-            "Youssef@pi.m", "Youssra@pi.m", "Aya@pi.m", "Bouchlaghem@pi.m", 
+             "Bouchlaghem@pi.m", 
             "Lamnii@pi.m", "Oudghiri@pi.m", "Anass@pi.m", "Ziane@pi.m", 
             "Mermri@pi.m", "Tsouli@pi.m", "Loubna@pi.m", "Serji@pi.m", 
-            "Jaara@pi.m", "YoussefB@g.m", "Rihab@g.m", "Soukayna@g.m", 
-            "Jihane@M.kh"
+            "Jaara@pi.m", "Omar@pi.m",
         ],
 
         "Nisrine0001" : ["Nisrine@g.m"]
+        "123" : [
+          "Youssef@pi.m", "Youssra@pi.m", "Aya@pi.m",
+          "YoussefB@g.m", "Rihab@g.m", "Soukayna@g.m",
+          "Jihane@M.kh"
+        ],
         
 
     };
