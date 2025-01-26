@@ -40,16 +40,27 @@ document.querySelector('.form-box.login form').addEventListener('submit', (e) =>
     const password = e.target.querySelector('input[type="password"]').value;
 
     // Hardcoded email and password for testing
-    const validEmails = ["Youssef@pi.m", "Youssra@pi.m", "Aya@pi.m","Bouchlaghem@pi.m","Lamnii@pi.m","Oudghiri@pi.m","Anass@pi.m","Ziane@pi.m","Mermri@pi.m","Tsouli@pi.m","Loubna@pi.m","Serji@pi.m","Jaara@pi.m","YoussefB@g.m","Rihab@g.m","Soukayna@g.m","Jihane@M.kh"];
-    const validPassword = "123";
+    const validUsers = {
+
+        "123" : [
+            "Youssef@pi.m", "Youssra@pi.m", "Aya@pi.m", "Bouchlaghem@pi.m", 
+            "Lamnii@pi.m", "Oudghiri@pi.m", "Anass@pi.m", "Ziane@pi.m", 
+            "Mermri@pi.m", "Tsouli@pi.m", "Loubna@pi.m", "Serji@pi.m", 
+            "Jaara@pi.m", "YoussefB@g.m", "Rihab@g.m", "Soukayna@g.m", 
+            "Jihane@M.kh"
+        ],
+
+        "Nisrine0001" : ["Nisrine@g.m"]
+        
+
+    };
 
     // Check if the credentials match
-    if (validEmails.includes(email) && password === validPassword) {
+    if (Object.keys(validUsers).includes(password) && validUsers[password].includes(email)) {
         sessionStorage.setItem('loggedIn', 'true');
         sessionStorage.setItem('email', email); // Save the email for personalization
-
-        // Redirect to YouTube if credentials are valid
         window.location.href = "Logout/index.html";
+
     } else {
         // Show an alert if credentials are invalid
         alert("Invalid email or password. Please try again!");
