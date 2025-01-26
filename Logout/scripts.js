@@ -20,9 +20,9 @@ const translations = {
         watchVideos: "مشاهدة الفيديوهات",
         readPDFs: "قراءة ملفات PDF",
         messageForYou: "رسالة<br>لك!",
-        logo: "ب. يوسف",
+        logo: "يُوسُفُ ",
         language: "اللغة",
-        logout: "تسجيل الخروج"
+        logout: "الخروج"
     },
     am: {
         watchVideos: "ⵙⴰⵏⵉ ⵏ ⵓⵏⵏⴰⴽⵍⵓ",
@@ -36,7 +36,7 @@ const translations = {
         watchVideos: "ビデオを見る",
         readPDFs: "PDFを読む",
         messageForYou: "メッセージ<br>あなたへ!",
-        logo: "B. ユセフ",
+        logo: "ユセフ",
         language: "言語",
         logout: "ログアウト"
     }
