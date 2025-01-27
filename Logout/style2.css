@@ -43,6 +43,7 @@
 
 .text-section {
     position: absolute;
+    margin-top: 20px; /* Space below the logo and logout button */
     left: 50%;
     transform: translateX(-50%);
     top: 50%; /* Adjust based on your desired vertical alignment */
