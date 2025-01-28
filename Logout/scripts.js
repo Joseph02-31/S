@@ -72,6 +72,7 @@
        // mCard.href = "../Pages/msg.html";
       } else if (email === "aboyoussef@B.f") {    
           textDiv.textContent = "! مرحباً بالسيد محمد بوزياني "; 
+          textDiv.classList.add("ara");
          
           mCard.href = "../Pages/msg2.html";
       
