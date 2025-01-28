@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=0.5">
+  <title> رسالة لك ـ </title>
+    <script>
+        // Check if the user is logged in
+        if (sessionStorage.getItem('loggedIn') !== 'true') {
+            // If not, redirect to the login page
+            window.location.href = "../index.html"; // Login page URL
+        }
+    </script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style2.css">
+  <link rel="icon" href="1.png" type="image/x-icon">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #282c34;
+      background: url(s.jpg) no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-blend-mode: overlay;
+      line-height: 1.6;
+      flex-direction: column;
+      display: flex;
+      overflow-y: auto;
+    }
+    header {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 10px;
+     }
+
+
+    
+        
+    .icon-link {
+        margin-right: 20px; /* Spacing between the icon and the logo */
+        text-decoration: none;
+        }
+
+    .logo{
+          font-family: 'TeX Gyre Chorus', cursive;
+          font-size: 1.5em;
+          color: #ffffff;
+          user-select: none;
+        }
+
+    .icon {
+    width: 40px; /* Set desired size */
+    height: 40px;
+    vertical-align: middle;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Smooth animation */
+       }
+
+    .icon:hover {
+    transform: scale(1.2); /* Enlarge on hover */
+       }
+
+            .msg-section2 {
+            color: rgb(0, 0, 0);
+            margin-top: 40px; /* Add space between video and description */
+            text-align: center;
+            padding: 10px;
+            width: 900px;
+            max-width: 90%;
+            border: 2px solid rgba(28, 26, 26, 0.7); /* Transparent red border */
+            background-color: rgba(255, 255, 255, 0.4); /* Transparent background */
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+        }
+            .msg-section2:hover {
+            background-color: #f9f9f9;
+             }
+
+        .msg-section2 h2 {
+            font-family: "Noto Nastaliq Urdu", serif;
+            color: rgb(221, 6, 6);
+            text-align: center;
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .msg-section2 p {
+          font-family: "Noto Nastaliq Urdu", serif;
+
+
+            font-size: 25px;
+            line-height: 2.6;
+            color: #000000;
+            padding: 10px; /* Optional: adds padding to the text for better readability */
+        }
+        .msg-section2 h3 {
+            font-family: "Noto Nastaliq Urdu", serif;
+            color: rgb(93, 76, 72);
+            text-align: Left;
+            font-size: 25px;
+            margin-bottom: 10px;
+            margin-left: 20px;
+        }
+
+  </style>
+</head>
+<body>
+
+    <header>
+      <a href="javascript:void(0);" class="icon-link" onclick="goBack()">
+        <img src="arrow.png" alt="Arrow Icon" class="icon">      </a>
+        <h2 class="logo">B. Youssef</h2>
+    </header> 
+
+    <script>
+      function goBack() {
+          window.history.back();  // Navigate back to the previous page
+      }
+  </script>
+
+  <div class="msg-section2"></div>
+
+
+  <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const email = sessionStorage.getItem('email'); // Get email from session storage
+            const msgSection2 = document.querySelector('.msg-section2'); // Select the msg-section div
+
+            // Check email and update the message accordingly
+if (email === "aboyoussef@B.f") {
+               msgSection2.innerHTML = `
+
+
+<h2>إلى أبي العزيز</h2>
+
+<p>السَّلاَمُ عَلَيْكُمْ وَرَحْمَةُ اللَّـهِ وَبَرَكاتُهُ، أَمَّا بَعْدُ</p>
+<p>أُودُّ أَنْ أُعَبِّرَ لَكَ عَنْ أَعْمَقِ مَشَاعِرِ الشُّكْرِ وَالْامْتِنانِ. لَقَدْ كُنتَ دَائِمًا النُّورَ الَّذِي يَرْشُدُنِي فِي طَرِيقِي، وَالدَّاعِمَ الَّذِي يَرْفَعُنِي فِي لَحَظَاتِ ضَعْفِي، وَالسَّنَدَ الَّذِي أَعْتَمِدُ عَلَيْهِ فِي كُلِّ الأَوْقَاتِ</p>
+
+<p>شُكْرًا لَكَ عَلَى تَشْجِيعِكَ ٱلْمُسْتَمِرِّ، وَعَلَى إِيمَانِكَ بِقُدَرَاتِي حَتَّى عِندَمَا كُنتُ أَشُكُّ بِنَفْسِي. كَلِمَاتُكَ وَتَحْفِيزُكَ كَانَتَا الدَّافِعَ الَّذِي يَجْعَلُنِي أَسْتَمِرُّ فِي السَّعْيِ لِتَحْقِيقِ أَحْلَامِي</p>
+
+<p>أَسْأَلُ ٱللَّـهَ أَنْ يُطِيلَ فِي عُمُرِكَ وَيُبَارِكْ فِي صِحَّتِكَ، وَسَأَظَلُّ أَعْمَلُ جَاهِدًا لِأَكُونَ دَائِمًا مَصْدَرَ فَخْرٍ لَكَ</p>
+
+<p>بِإِخْلَاصٍ</p>
+
+<h3>يُوسُفُ</h3>
+
+`;}
+            
+            
+           });
+
+
+
+ </script>
+
+
+
+ 
+
+  <script>
+    function openDriveLink(link) {
+      window.open(link, '_blank');
+    }
+  </script>
+
+</body>
+</html>
