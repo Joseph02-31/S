@@ -54,7 +54,8 @@ document.querySelector('.form-box.login form').addEventListener('submit', (e) =>
           "Youssef@pi.m", "Youssra@pi.m", "Aya@pi.m",
           "YoussefB@g.m", "Rihab@g.m", "Soukayna@g.m",
           "Jihane@M.kh"
-        ]
+        ],
+        "Souka1991" : [ "Soukayna@Y.ally"]
         
 
     };
