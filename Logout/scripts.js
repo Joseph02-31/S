@@ -1,6 +1,7 @@
                 document.addEventListener("DOMContentLoaded", () => {
                 const email = sessionStorage.getItem('email'); // Get the email from session storage
                 const textDiv = document.querySelector('.text-section'); // Select the text-section div
+                const textDiv2 = document.querySelector('.text-section2'); // Select the text-section2 div
                 const vCard = document.getElementById('v-card');
                 const pCard = document.getElementById('p-card'); // Select the P card element
                 const mCard = document.getElementById('m-card'); // Select the M card element
@@ -70,7 +71,7 @@
           mCard.style.display = "none";
        // mCard.href = "../Pages/msg.html";
       } else if (email === "aboyoussef@B.f") {    
-          textDiv.textContent = "! مرحباً بالسيد محمد بوزياني "; 
+          textDiv2.textContent = "! مرحباً بالسيد محمد بوزياني "; 
          
           mCard.href = "../Pages/msg2.html";
       
