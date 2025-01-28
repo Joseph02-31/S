@@ -1,7 +1,8 @@
                 document.addEventListener("DOMContentLoaded", () => {
                 const email = sessionStorage.getItem('email'); // Get the email from session storage
                 const textDiv = document.querySelector('.text-section'); // Select the text-section div
-                const pCard = document.getElementById('p-card'); // Select the M card element
+                const vCard = document.getElementById('v-card');
+                const pCard = document.getElementById('p-card'); // Select the P card element
                 const mCard = document.getElementById('m-card'); // Select the M card element
                   
 
@@ -61,7 +62,7 @@
         
     } else if (email === "Soukayna@Y.ally") {    
           textDiv.textContent = "Welcome Ms. Soukayna RAHMANI !"; 
-          
+          vCard.style.display = "none";
           pCard.style.display = "none";
           mCard.style.display = "none";
      } else if (email === "Jihane@M.kh") {    
