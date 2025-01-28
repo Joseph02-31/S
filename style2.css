@@ -26,6 +26,16 @@
     display: block;
 }
 
+/* Font for Arabic text */
+.dropdown-content a:lang(ar) {
+    font-family: "Noto Kufi Arabic", serif;
+}
+/* Font for Jp text */
+.dropdown-content a:lang(jp) {
+    font-family: "Sawarabi Mincho", serif;
+}
+
+
 /* Show the dropdown content when the button is clicked */
 
 .show {
