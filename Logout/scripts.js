@@ -1,7 +1,7 @@
                 document.addEventListener("DOMContentLoaded", () => {
                 const email = sessionStorage.getItem('email'); // Get the email from session storage
                 const textDiv = document.querySelector('.text-section'); // Select the text-section div
-                const mCard = document.getElementById('p-card'); // Select the M card element
+                const pCard = document.getElementById('p-card'); // Select the M card element
                 const mCard = document.getElementById('m-card'); // Select the M card element
                   
 
