@@ -36,6 +36,14 @@
     text-decoration: none;
     display: block;
 }
+
+/*Default Popins ital   ... */
+
+.dropdown-content a:lang(en),
+.dropdown-content a:lang(fr) {
+    font-family: 'poppins',sans-serif;
+}
+
 /* Font for Arabic text */
 .dropdown-content a:lang(ar) {
     font-family: "Noto Kufi Arabic", serif;
