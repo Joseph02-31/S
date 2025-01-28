@@ -60,24 +60,8 @@
     border-radius: 8px;
     z-index: 1;
 }
-.text-section2 {
-    position: absolute;
-    margin-top: 20px; /* Space below the logo and logout button */
-    left: 50%;
-    transform: translateX(-50%);
-    top: 50%; /* Adjust based on your desired vertical alignment */
-    transform: translate(-50%, -50%);
-    padding: 10px;
-    width: 90%; /* Adapt to smaller screens */
-    max-width: 600px;
-    border: 2px solid rgba(28, 26, 26, 0.7);
-    background-color: rgba(0, 0, 0, 0.3);
-    color: white;
-    text-align: center;
-    font-family: "Noto Nastaliq Urdu", serif;
-    font-size: 40px;
-    border-radius: 8px;
-    z-index: 1;
-}
 
+.text-section.ara {
+            font-family: 'Noto Nastaliq Urdu', serif; /* Urdu-specific font */
+        }
 
