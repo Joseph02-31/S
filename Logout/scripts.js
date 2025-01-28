@@ -1,7 +1,9 @@
                 document.addEventListener("DOMContentLoaded", () => {
                 const email = sessionStorage.getItem('email'); // Get the email from session storage
                 const textDiv = document.querySelector('.text-section'); // Select the text-section div
+                const mCard = document.getElementById('p-card'); // Select the M card element
                 const mCard = document.getElementById('m-card'); // Select the M card element
+                  
 
 
                     
@@ -57,8 +59,10 @@
         textDiv.textContent = "Welcome Ms. Rihab BOUZIANI !";           
             mCard.href = "../Pages/msg.html";
         
-    } else if (email === "Soukayna@g.m") {    
+    } else if (email === "Soukayna@Y.ally) {    
           textDiv.textContent = "Welcome Ms. Soukayna RAHMANI !"; 
+          
+          pCard.style.display = "none";
           mCard.style.display = "none";
      } else if (email === "Jihane@M.kh") {    
           textDiv.textContent = "Welcome Ms. Maryama KHATABI !"; 
