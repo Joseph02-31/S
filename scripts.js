@@ -55,7 +55,7 @@ document.querySelector('.form-box.login form').addEventListener('submit', (e) =>
           "YoussefB@g.m", "Rihab@g.m", "Soukayna@g.m",
           "Jihane@M.kh"
         ],
-        "Souka1991" : [ "Soukayna@Y.ally"],
+
         "123456789" : [ "aboyoussef@B.f" ]
         
 
