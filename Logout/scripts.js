@@ -27,6 +27,9 @@
         
     } else if (email === "Lamnii@pi.m") {
         textDiv.textContent = "Welcome Mr. Mohamed LAMNII !"; 
+        mCard.href = "../Pages/msg.html";
+
+      
     } else if (email === "Anass@pi.m") {
         textDiv.textContent = "Welcome Mr. Anass OURRAOUI !"; 
                       mCard.style.display = "none";
