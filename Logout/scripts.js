@@ -35,8 +35,8 @@
        // mCard.href = "../Pages/msg.html";
     } else if (email === "Serji@pi.m") {
         textDiv.textContent = "Welcome Mr. Abdelilah SERJI !";
-                //   mCard.style.display = "none";
-          mCard.href = "../Pages/msg.html";
+                  mCard.style.display = "none";
+         // mCard.href = "../Pages/msg.html";
 
     } else if (email === "Tsouli@pi.m") {
         textDiv.textContent = "Welcome Mr. Najib TSOULI !";
