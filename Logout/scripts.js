@@ -27,12 +27,12 @@
         
     } else if (email === "Lamnii@pi.m") {
         textDiv.textContent = "Welcome Mr. Mohamed LAMNII !"; 
-          mCard.style.display = "none";
-        //  mCard.href = "../Pages/msg.html";
+        //  mCard.style.display = "none";
+          mCard.href = "../Pages/msg.html";
     } else if (email === "Anass@pi.m") {
         textDiv.textContent = "Welcome Mr. Anass OURRAOUI !"; 
-                      mCard.style.display = "none";
-       // mCard.href = "../Pages/msg.html";
+                  //    mCard.style.display = "none";
+        mCard.href = "../Pages/msg.html";
     } else if (email === "Serji@pi.m") {
         textDiv.textContent = "Welcome Mr. Abdelilah SERJI !";
                   mCard.style.display = "none";
@@ -78,7 +78,7 @@
          
           mCard.href = "../Pages/msg2.html";
       } else if (email === "Mahdi@4IR.m") {    
-          textDiv.textContent = "Welcome Mr. El Mahdi Bouyahrouzi !"; 
+          textDiv.textContent = "Welcome Mr. El Mahdi BOUYAHROUZI !"; 
           mCard.style.display = "none";
        // mCard.href = "../Pages/msg.html";
       
