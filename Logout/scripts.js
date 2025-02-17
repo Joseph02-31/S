@@ -77,7 +77,7 @@
           textDiv.classList.add("ara");
          
           mCard.href = "../Pages/msg2.html";
-      } else if (email === "Jihane@M.kh") {    
+      } else if (email === "Mahdi@4IR.m") {    
           textDiv.textContent = "Welcome Mr. El Mahdi Bouyahrouzi !"; 
           mCard.style.display = "none";
        // mCard.href = "../Pages/msg.html";
