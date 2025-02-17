@@ -81,6 +81,8 @@
           textDiv.textContent = "Welcome Mr. El Mahdi BOUYAHROUZI !"; 
           mCard.style.display = "none";
        // mCard.href = "../Pages/msg.html";
+      } else if (email === "Marzouki@pi.m") {
+        textDiv.textContent = "Welcome Mr. Brahim MARZOUKI !";
       
       
 
@@ -90,6 +92,7 @@
         
     } else {
         textDiv.textContent = "Hello!"; // Default message
+        mCard.style.display = "none";
     }
 
 
