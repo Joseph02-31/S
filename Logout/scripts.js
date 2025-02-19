@@ -61,7 +61,7 @@
             mCard.href = "../Pages/msg.html";
     } else if (email === "Rihab@g.m") {
         textDiv.textContent = "Welcome Ms. Rihab BOUZIANI !";           
-            mCard.href = "../Pages/msg.html";
+            mCard.style.display = "none";
         
     } else if (email === "Soukayna@Y.ally") {    
           textDiv.textContent = "Welcome Ms. Soukayna RAHMANI !"; 
