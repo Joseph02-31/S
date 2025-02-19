@@ -58,7 +58,7 @@
         mCard.href = "../Pages/msg.html";
      } else if (email === "YoussefB@g.m") {
         textDiv.textContent = "Welcome Mr. Youssef BOUYAHROUZI !";  
-            mCard.href = "../Pages/msg.html";
+            mCard.style.display = "none";
     } else if (email === "Rihab@g.m") {
         textDiv.textContent = "Welcome Ms. Rihab BOUZIANI !";           
             mCard.style.display = "none";
