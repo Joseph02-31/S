@@ -19,7 +19,8 @@
         textDiv.textContent = "Welcome Ms. Youssra BENHADOU !";
         mCard.style.display = "none";
     } else if (email === "Aya@pi.m") {
-        textDiv.textContent = "Welcome Ms. Aya HARRAT !";   
+        textDiv.textContent = "Welcome Ms. Aya HARRAT !";
+      mCard.style.display = "none";
     } else if (email === "Bouchlaghem@pi.m") {
         textDiv.textContent = "Welcome Mr. Mohammed BOUCHLAGHEM !"; 
     } else if (email === "Oudghiri@pi.m") {
