@@ -69,6 +69,7 @@
          // vCard.style.display = "none";
          // pCard.style.display = "none";
          // mCard.style.display = "none";
+      mCard.href = "../Pages/msg.html";
      } else if (email === "Jihane@M.kh") {    
           textDiv.textContent = "Welcome Ms. Maryama KHATABI !"; 
           mCard.style.display = "none";
