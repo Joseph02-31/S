@@ -64,7 +64,7 @@
         textDiv.textContent = "Welcome Ms. Rihab BOUZIANI !";           
             mCard.style.display = "none";
         
-    } else if (email === "Soukayna@Y.ally") {    
+    } else if (email === "Soukayna@g.m") {    
           textDiv.textContent = "Welcome Ms. Soukayna RAHMANI !"; 
          // vCard.style.display = "none";
           pCard.style.display = "none";
