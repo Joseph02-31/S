@@ -85,6 +85,12 @@
        // mCard.href = "../Pages/msg.html";
       } else if (email === "Marzouki@pi.m") {
         textDiv.textContent = "Welcome Mr. Brahim MARZOUKI !";
+      } else if (email === "Ouahab@pi.m") {
+        textDiv.textContent = "Welcome Mr. Abdelmalek OUAHAB !";
+      mCard.style.display = "none";
+      } else if (email === "Siham@pi.m") {
+        textDiv.textContent = "Welcome Ms. Siham EL HABIB !";
+        mCard.href = "../Pages/msg.html";
       
       
 
@@ -204,3 +210,4 @@ window.onclick = function(event) {
         }
     }
 }
+
