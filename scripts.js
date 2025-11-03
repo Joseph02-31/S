@@ -46,7 +46,7 @@ document.querySelector('.form-box.login form').addEventListener('submit', (e) =>
              "Bouchlaghem@pi.m", 
             "Lamnii@pi.m", "Oudghiri@pi.m", "Anass@pi.m", "Ziane@pi.m", 
             "Mermri@pi.m", "Tsouli@pi.m", "Loubna0012@pi.m", "Serji@pi.m", 
-            "Jaara@pi.m", "Omar@pi.m", "Ismaili@pi.m","Marzouki@pi.m"
+            "Jaara@pi.m", "Omar@pi.m", "Ismaili@pi.m","Marzouki@pi.m" ,"Siham@pi.m" ,"Ouahab@pi.m"
         ],
 
         "Nisrine0001" : ["Nisrine@g.m"],
@@ -85,3 +85,4 @@ registerForm.addEventListener('submit', (e) => {
     alert('No new users for the moment!'); // Show the alert
     console.log('Registration blocked: No new users allowed.');
 });
+
